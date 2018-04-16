@@ -1,7 +1,5 @@
 # Ansible Role: Pip (for Python)
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-pip.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-pip)
-
 An Ansible Role that installs [Pip](https://pip.pypa.io) on Linux.
 
 ## Requirements
@@ -43,6 +41,10 @@ A list of packages to install with pip. Examples below:
       - name: docker
         state: forcereinstall
 
+    pip_extra_args: ""
+
+Some etra args to add during pip install
+
 ## Dependencies
 
 None.
@@ -51,7 +53,7 @@ None.
 
     - hosts: all
       roles:
-        - geerlingguy.pip
+        - pip
 
 ## License
 
@@ -59,4 +61,4 @@ MIT / BSD
 
 ## Author Information
 
-This role was created in 2017 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).
+This role was created in 2017 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/). And populated by Kevin Didelot in 2018
